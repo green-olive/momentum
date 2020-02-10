@@ -25,7 +25,8 @@ function handleSubmit(event) {
     // submit에 대한 기본값 해제
     event.preventDefault();
     const currentValue = input.value;
-    paintingGreeting(currentValue);
+    const randomNumber = genRandom();
+    paintingGreeting(currentValue, randomNumber);
     saveName(currentValue);
 }
 
