@@ -15,7 +15,7 @@ function whatTimeIs() {
     const seconds = now.getSeconds();
 
 
-    dateText.innerText = `${years}.${months < 10 ? `0${months}` : `${months}`}.${dates < 10 ? `0${dates}` : `${dates}`}일`
+    dateText.innerText = `${years}.${months < 10 ? `0${months}` : `${months}`}.${dates < 10 ? `0${dates}` : `${dates}`}`
     switch (days) {
         case 1:
             dayText.innerText = `월요일`;
