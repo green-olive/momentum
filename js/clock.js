@@ -7,7 +7,7 @@ const container = document.querySelector(".container"),
 function whatTimeIs() {
     const now = new Date();
     const years = now.getFullYear();
-    const months = now.getMonth();
+    const months = now.getMonth() + 1;
     const dates = now.getDate();
     const days = now.getDay();
     const hours = now.getHours();
@@ -15,7 +15,7 @@ function whatTimeIs() {
     const seconds = now.getSeconds();
 
 
-    dateText.innerText = `${years}년 ${months < 10 ? `0${months}` : `${months}`}월 ${dates < 10 ? `0${dates}` : `${dates}`}일`
+    dateText.innerText = `${years}.${months < 10 ? `0${months}` : `${months}`}.${dates < 10 ? `0${dates}` : `${dates}`}일`
     switch (days) {
         case 1:
             dayText.innerText = `월요일`;
